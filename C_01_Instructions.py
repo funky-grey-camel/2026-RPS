@@ -1,4 +1,6 @@
-# check that users have entered a valid
+
+# functions go here
+
 def string_checker(question, valid_ans=('yes', 'no')):
 
     if valid_ans is None:
@@ -25,14 +27,20 @@ def string_checker(question, valid_ans=('yes', 'no')):
         print()
 
 
-# Main routine goes here
+def instruction():
+    """Displays instructions"""
 
-yes_no = ["yes", "no"]
-rps_list = ["rock", "paper", "scissors", "xxx"]
+    print("""
+**** RPS Instructions... ****
 
-want_instructions = string_checker("Do you want to see the instructions? ")
+Choose rock / paper / scissors.
 
-print("You chose: ", want_instructions)
+Try to win
+    """)
 
-user_choice = string_checker("chose: ", rps_list)
-print("you chose: ", user_choice)
+
+#Main routine
+
+want_instructions = string_checker("Do you want the instructions? ")
+
+print("we done")

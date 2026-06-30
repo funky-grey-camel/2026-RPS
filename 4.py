@@ -1,4 +1,5 @@
 # check that users have entered a valid
+# option based on list
 def string_checker(question, valid_ans=('yes', 'no')):
 
     if valid_ans is None:
